@@ -1,8 +1,8 @@
 # Python
-backend/venv/
+Backend/venv/
 __pycache__/
 *.pyc
-venv
+Backend/venv
 
 
 # Node.js
