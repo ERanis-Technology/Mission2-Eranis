@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/media/kednai/Data Center/Data Center/GitHub/Mission2-Eranis/Backend/venv/bin/python3" "$0" "$@"
+'''exec' "/home/heil/Desktop/Projet e-RANIS/Mission2-Eranis/Backend/venv/bin/python3" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re

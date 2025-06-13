@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV='/media/kednai/Data Center/Data Center/GitHub/Mission2-Eranis/Backend/venv'
+VIRTUAL_ENV='/home/heil/Desktop/Projet e-RANIS/Mission2-Eranis/Backend/venv'
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

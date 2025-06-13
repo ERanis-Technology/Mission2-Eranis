@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV '/media/kednai/Data Center/Data Center/GitHub/Mission2-Eranis/Backend/venv'
+set -gx VIRTUAL_ENV '/home/heil/Desktop/Projet e-RANIS/Mission2-Eranis/Backend/venv'
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH
