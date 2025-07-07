@@ -2,6 +2,7 @@ from rest_framework import serializers
 from django.core.exceptions import ValidationError
 from .models import Admin, Professionnel, Entreprise
 from django.contrib.auth.hashers import make_password, check_password
+from rest_framework_simplejwt.tokens import RefreshToken #Utiliser pour le token lors du login
 
 class AdminSerializer(serializers.ModelSerializer):
     class Meta:
@@ -71,3 +72,52 @@ class SignupSerializer(serializers.Serializer):
             return Professionnel.objects.create(**validated_data)
         elif role == 'entreprise':
             return Entreprise.objects.create(**validated_data)
+        
+
+
+class LoginSerializer(serializers.Serializer):
+    email = serializers.EmailField()
+    mdp = serializers.CharField()
+
+    def validate(self, data):
+        email = data.get('email')
+        mdp = data.get('mdp')
+
+        # Vérifier si l'utilisateur existe dans l'un des modèles
+        user = None
+        user_type = None
+        user_id = None
+
+        if Admin.objects.filter(email=email).exists():
+            user = Admin.objects.get(email=email)
+            user_type = 'admin'
+            user_id = user.id_admin
+        elif Professionnel.objects.filter(email=email).exists():
+            user = Professionnel.objects.get(email=email)
+            user_type = 'professionnel'
+            user_id = user.id_pro
+        elif Entreprise.objects.filter(email=email).exists():
+            user = Entreprise.objects.get(email=email)
+            user_type = 'entreprise'
+            user_id = user.id_entreprise
+        else:
+            raise serializers.ValidationError("Cet email n'existe pas.")
+
+        # Vérifier le mot de passe
+        if not check_password(mdp, user.mdp):
+            raise serializers.ValidationError("Mot de passe incorrect.")
+
+        # Générer les tokens JWT manuellement
+        refresh = RefreshToken()
+        refresh['user_id'] = user_id
+        refresh['user_type'] = user_type
+        access = refresh.access_token
+
+        data = {
+            'refresh': str(refresh),
+            'access': str(access),
+            'user_type': user_type,
+            'user_id': user_id,
+            'nom': user.nom
+        }
+        return data
