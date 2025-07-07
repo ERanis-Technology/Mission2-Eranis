@@ -1,0 +1,50 @@
+
+### POST Request
+POST http://127.0.0.1:8000/api/signup/
+Content-Type: application/json
+
+{
+  "email": "test@eranis.com",
+  "mdp": "motdepasse123",
+  "nom": "Test User",
+  "role": "professionnel",
+  "annee_arrivee": "2025-01-01",
+  "photo": "/home/heil/Desktop/Projet e-RANIS/Mission2-Eranis/Backend/photos/photo1.jpg",
+  "ynnovass_account": false
+}
+
+
+###POST Request
+POST http://127.0.0.1:8000/api/signup/ HTTP/1.1
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="email"
+
+test@eranis.com
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="mdp"
+
+motdepasse123
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="nom"
+
+Test User
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="role"
+
+professionnel
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="annee_arrivee"
+
+2025-01-01
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="photo"; filename="reseller.jpg"
+Content-Type: image/jpeg
+
+< /home/heil/Desktop/Projet e-RANIS/Mission2-Eranis/Backend/photos/reseller.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="ynnovass_account"
+
+false
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
