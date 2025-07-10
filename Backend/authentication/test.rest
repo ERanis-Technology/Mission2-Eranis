@@ -74,6 +74,8 @@ Content-Disposition: form-data; name="ynnovass_account"
 false
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--
 
+
+
 #Un professionnel qui se login
 ###POST Request
 POST http://127.0.0.1:8000/api/login/ HTTP/1.1
@@ -93,4 +95,29 @@ Content-Type: application/json
 {
   "email": "smart@eranis.com",
   "mdp": "motdepasse123"
+}
+
+
+
+###POSST Request
+POST http://127.0.0.1:8000/api/subscriptions/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyMTU5OTM4LCJpYXQiOjE3NTIxNTk2MzgsImp0aSI6ImE3OTllZjEyMTJkZjQ5ZGNiNWEzYjYyMTUwNGU2YzE2IiwidXNlcl9pZCI6MSwidXNlcl90eXBlIjoiZW50cmVwcmlzZSJ9.zQhGLITl7XQ-_F2aKfdymsU-ShtkhXShhRK-_HceRoE
+Content-Type: application/json
+
+{
+  "abonnement": "premium",
+  "acces_templates": true,
+  "annees": 1,
+  "mois": 6
+}
+
+
+###POST Request
+POST http://127.0.0.1:8000/api/subscriptions/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyMTU5OTM4LCJpYXQiOjE3NTIxNTk2MzgsImp0aSI6ImE3OTllZjEyMTJkZjQ5ZGNiNWEzYjYyMTUwNGU2YzE2IiwidXNlcl9pZCI6MSwidXNlcl90eXBlIjoiZW50cmVwcmlzZSJ9.zQhGLITl7XQ-_F2aKfdymsU-ShtkhXShhRK-_HceRoE
+Content-Type: application/json
+
+{
+  "abonnement": "premium",
+  "acces_templates": true
 }
