@@ -2,7 +2,7 @@
 Backend/venv/
 __pycache__/
 *.pyc
-Backend/venv
+Backend/venv/*
 
 
 # Node.js

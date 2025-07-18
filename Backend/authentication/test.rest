@@ -1,0 +1,123 @@
+
+
+#inscription professionnel
+###POST Request
+POST http://127.0.0.1:8000/api/signup/ HTTP/1.1
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="email"
+
+test@eranis.com
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="mdp"
+
+motdepasse123
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="nom"
+
+Test User
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="role"
+
+professionnel
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="annee_arrivee"
+
+2025-01-01
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="photo"; filename="reseller.jpg"
+Content-Type: image/jpeg
+
+< /home/heil/Desktop/Projet e-RANIS/Mission2-Eranis/Backend/photos/reseller.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="ynnovass_account"
+
+false
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+
+
+
+#inscription Entreprise
+###POST Request
+POST http://127.0.0.1:8000/api/signup/ HTTP/1.1
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="email"
+
+smart@eranis.com
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="mdp"
+
+motdepasse123
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="nom"
+
+smartcloudservices
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="role"
+
+entreprise
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="annee_arrivee"
+
+2025-01-01
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="siret"
+
+12345678901234
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="ynnovass_account"
+
+false
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+
+
+#Un professionnel qui se login
+###POST Request
+POST http://127.0.0.1:8000/api/login/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "test@eranis.com",
+  "mdp": "motdepasse123"
+}
+
+
+#Une entreprise qui se login
+###POST Request
+POST http://127.0.0.1:8000/api/login/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "smart@eranis.com",
+  "mdp": "motdepasse123"
+}
+
+
+
+###POSST Request
+POST http://127.0.0.1:8000/api/subscriptions/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyMTU5OTM4LCJpYXQiOjE3NTIxNTk2MzgsImp0aSI6ImE3OTllZjEyMTJkZjQ5ZGNiNWEzYjYyMTUwNGU2YzE2IiwidXNlcl9pZCI6MSwidXNlcl90eXBlIjoiZW50cmVwcmlzZSJ9.zQhGLITl7XQ-_F2aKfdymsU-ShtkhXShhRK-_HceRoE
+Content-Type: application/json
+
+{
+  "abonnement": "premium",
+  "acces_templates": true,
+  "annees": 1,
+  "mois": 6
+}
+
+
+###POST Request
+POST http://127.0.0.1:8000/api/subscriptions/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyMTU5OTM4LCJpYXQiOjE3NTIxNTk2MzgsImp0aSI6ImE3OTllZjEyMTJkZjQ5ZGNiNWEzYjYyMTUwNGU2YzE2IiwidXNlcl9pZCI6MSwidXNlcl90eXBlIjoiZW50cmVwcmlzZSJ9.zQhGLITl7XQ-_F2aKfdymsU-ShtkhXShhRK-_HceRoE
+Content-Type: application/json
+
+{
+  "abonnement": "premium",
+  "acces_templates": true
+}
