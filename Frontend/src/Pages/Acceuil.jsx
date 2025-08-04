@@ -58,10 +58,22 @@ function Acceuil() {
                     <h2>Nos Services</h2>
                     <p>Nous accompagnons les entreprises et les professionnels avec des solutions innovantes et sur mesure.</p>
                     <div className="content">
-                        <ServiceCompetent/>
-                        <ServiceCompetent/>
-                        <ServiceCompetent/>
-                        <ServiceCompetent/>
+                        <ServiceCompetent image={"/image7.png"} 
+                            title={"Développement de solutions digitales"} 
+                            content={"Nous concevons et développons des solutions digitales sur mesure, adaptables aux besoins spécifiques de chaque entreprise. Que ce soit pour automatiser vos processus internes, fluidifier votre relation client ou optimiser vos ventes, notre expertise couvre l'ensemble du cycle de vie logiciel."}
+                        />
+                        <ServiceCompetent  image={"/image10.png"} 
+                            title={"Robotique intelligente"} 
+                            content={"Nous développons des systèmes robotiques autonomes et semi-autonomes pour les secteurs industriels, logistiques et agricoles. Chaque solution est pensée pour augmenter l'efficacité, réduire la pénibilité humaine et apporter de la précision aux tâches critiques."}
+                        />
+                        <ServiceCompetent image={"/image12.png"} 
+                            title={"Intelligence Artificielle & Automatisation"} 
+                            content={"Nous développons des systèmes robotiques autonomes et semi-autonomes pour les secteurs industriels, logistiques et agricoles. Chaque solution est pensée pour augmenter l'efficacité, réduire la pénibilité humaine et apporter de la précision aux tâches critiques."}
+                        />
+                        <ServiceCompetent image={"/image4.png"} 
+                            title={"Design UX/UI & Prototypage"} 
+                            content={"L’expérience utilisateur est au cœur de nos conceptions. Nous créons des interfaces fonctionnelles, esthétiques et intuitives grâce à une démarche centrée utilisateur. Nos prototypes interactifs permettent de valider rapidement les concepts avant le développement."}
+                        />
                     </div>
                 </div>
             </main>

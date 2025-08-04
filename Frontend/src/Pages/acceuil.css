@@ -22,7 +22,7 @@
 }
 
 .acceuil main .part1 .messages h1 span{
-    color: var(--blue4);
+    color: var(--blue6);
 }
 
 .acceuil main .part1 .messages h5{
@@ -72,7 +72,7 @@
 }
 
 .acceuil main .part2 .description span{
-    color: var(--blue4);
+    color: var(--blue3);
 }
 
 .acceuil main .part2 .missions h3{
@@ -114,8 +114,7 @@
 /*===================================================================================================*/
 
 .acceuil main .part3{
-    border: 1px solid red;
-    padding: 4em 10%;
+    padding: 4em 9%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -132,7 +131,8 @@
 }
 
 .acceuil main .part3 .content{
-    border: 1px solid green;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
