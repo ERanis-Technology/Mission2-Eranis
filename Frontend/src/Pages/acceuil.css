@@ -1,0 +1,138 @@
+.acceuil{
+    padding-top: 5em;
+}
+
+.acceuil main .part1{
+    margin: 1em 2.5em 2em 2.5em;
+    padding: 3em 3em;
+    display: flex;
+    border-radius: 0.5em;
+    background: linear-gradient(to right,var(--blue2),var(--blue1));
+}
+
+.acceuil main .part1 .messages{
+    width: 60%;
+    color: #ffffff;
+} 
+
+.acceuil main .part1 .messages h1{
+    font-size: 4em;
+    font-family: "Poppins-bold";
+    line-height: 1.35em;
+}
+
+.acceuil main .part1 .messages h1 span{
+    color: var(--blue4);
+}
+
+.acceuil main .part1 .messages h5{
+    margin-top: 1em;
+    font-size: 15px;
+    font-family: "Poppins-light";
+
+}
+
+.acceuil main .part1 .illustrations{
+    width: 40%;
+    position: relative;
+}
+.acceuil main .part1 img{
+    width: 35%;
+    position: absolute;
+}
+
+.acceuil main .part1 img:nth-child(2){
+    width: 45%;
+    left: 30%;
+    top: -1em;
+}
+
+.acceuil main .part1 img:nth-child(1){
+    top: 40%;
+    left: 5%;
+    transform: rotate(-15deg);
+}
+
+.acceuil main .part1 img:nth-child(3){
+    right: -1.5em;
+    top: 40%;
+    transform: rotate(45deg);
+}
+
+/*===============================================================================================*/
+
+.acceuil main .part2{
+    margin-top: 1em;
+    background-color: #ffffff;
+    padding: 5em 3em;
+}
+
+.acceuil main .part2 .description{
+    font-size: 2em;
+}
+
+.acceuil main .part2 .description span{
+    color: var(--blue4);
+}
+
+.acceuil main .part2 .missions h3{
+    font-size: 1.45em;
+    color: grey;
+    margin: 1em 0;
+}
+
+.acceuil main .part2 .missions .content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.acceuil main .part2 button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3em;
+    padding: 0.95em;
+    font-size: 1em;
+    font-weight: 600;
+    background: linear-gradient(to right,var(--purple2),var(--purple3));
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.acceuil main .part2 button:hover{
+    letter-spacing: 1px;
+}
+
+.acceuil main .part2 button img{
+    width: 1em;
+    margin-left: 1em;
+}
+
+/*===================================================================================================*/
+
+.acceuil main .part3{
+    border: 1px solid red;
+    padding: 4em 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.acceuil main .part3 h2{
+    font-size: 3.25em;
+}
+
+.acceuil main .part3 p{
+    font-size: 1.2em;
+    text-align: start;
+    width: 100%;
+}
+
+.acceuil main .part3 .content{
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

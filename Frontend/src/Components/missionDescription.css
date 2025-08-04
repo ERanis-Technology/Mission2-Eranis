@@ -1,0 +1,18 @@
+.missionDescription{
+    width: 30%;
+    margin-right: 1em;
+}
+
+.missionDescription h4{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+}
+
+.missionDescription h4 img{
+    margin-right: 0.5em;
+}
+
+.missionDescription p{
+    font-weight: 300;
+}

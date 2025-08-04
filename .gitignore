@@ -7,6 +7,7 @@ Backend/venv/*
 
 # Node.js
 frontend/node_modules/
+Models/
 
 
 # OS
