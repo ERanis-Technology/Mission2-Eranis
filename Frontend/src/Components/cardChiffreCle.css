@@ -1,0 +1,40 @@
+.cardChiffreCle{
+    height: 22em;
+    border-radius: .5em;
+    color: #ffffff;
+    padding: 1em 2em;
+    position: relative;
+}
+
+.style1{
+    background: linear-gradient(to bottom right,var(--blue2),var(--blue3));
+}
+
+.style2{
+    background: linear-gradient(to bottom right,rgb(24, 24, 24), rgb(24, 24, 24));
+}
+
+.style2 .chiffre{
+    background: linear-gradient(to right,var(--blue2),var(--blue4));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cardChiffreCle img{
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.cardChiffreCle .chiffre{
+    font-size: 5em;
+    font-weight: 900;
+    font-family: "Poppins-bold";
+}
+
+.cardChiffreCle .value{
+    font-size: 2em;
+    font-weight: 800;
+    width: 90%;
+}

@@ -124,10 +124,12 @@
     font-size: 3.25em;
 }
 
-.acceuil main .part3 p{
+.acceuil main .part3 .description{
     font-size: 1.2em;
     text-align: start;
     width: 100%;
+    margin: 1em 0;
+    text-align: center;
 }
 
 .acceuil main .part3 .content{
@@ -135,4 +137,108 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+
+/*====================================================================================================*/
+
+.acceuil main .part4{
+    background: linear-gradient(var(--blue1),var(--blue1));
+}
+
+.acceuil main .part4 h2,
+.acceuil main .part4 .description{
+    color: #ffffff;
+}
+
+/*====================================================================================================*/
+
+.acceuil main .part5{
+    margin-top: 2em;
+    background: #ffffff;
+    padding-bottom: 5em;
+}
+
+.acceuil main .part5 .description{
+    margin-bottom: 1em;
+}
+
+
+.acceuil main .part5 .caroussel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+/*============================================================================*/
+
+.acceuil main .part6{
+    padding: 2em 3%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    position: relative;
+}
+
+.acceuil main .part6 h2{
+    font-size: 3.25em;
+}
+
+.acceuil main .part6 .description{
+    text-align: start;
+    width: 47%;
+    margin: 1em 0;
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+.acceuil main .part6 .figures img{
+    width: 25%;
+    z-index: 100;
+}
+
+.acceuil main .part6 .figures img:nth-child(1){
+    position: absolute;
+    right: 8%;
+    top: -12%;
+    transform: rotate(-15deg);
+}
+
+.acceuil main .part6 .figures img:nth-child(2){
+    position: absolute;
+    right: 28%;
+    top: 10%;
+    transform: rotate(10deg);
+}
+
+.acceuil main .part6 .figures img:nth-child(3){
+    position: absolute;
+    right: 12%;
+    top: 40%;
+    transform: rotate(15deg);
+    width: 21%;
+}
+
+.acceuil main .part6 .content {
+    margin-top: 2em;
+    width: 50%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    gap: 5em;
+}
+
+/*============================================================================*/
+.acceuil main .part7{
+    text-align: start;
+}
+
+.acceuil main .part7 h2{
+    width: 100%;
+}
+
+.acceuil main .part7 .description{
+    text-align: start;
+    font-weight: 300;
+    font-size: large;
 }
