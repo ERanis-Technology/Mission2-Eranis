@@ -242,3 +242,26 @@
     font-weight: 300;
     font-size: large;
 }
+
+.acceuil main .part7 .content h3{
+    font-size: 1.75em;
+    font-family: "Poppins-medium";
+    margin-bottom: .5em;
+}
+
+.acceuil main .part7 .content1 .text{
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 1.5em;
+}
+
+.acceuil main .part7 .content2 .missions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    gap: 2em;
+    padding: 3% 2%;
+    background-color: var(--blue6);
+    border-radius: .5em;
+}
+

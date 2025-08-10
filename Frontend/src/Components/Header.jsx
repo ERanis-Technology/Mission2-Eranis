@@ -1,9 +1,9 @@
 import React from "react";
 import "./header.css"
+import { useEffect,useState } from "react";
 
 
 function Header() {
-    
 
     return (
         <div id="header">

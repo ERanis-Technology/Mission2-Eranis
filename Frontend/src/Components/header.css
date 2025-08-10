@@ -13,6 +13,10 @@
     z-index: 200;
 }
 
+.bg{
+    background-color: #353535;
+}
+
 #header .logo{
     width: 10%;
     height: 85%;

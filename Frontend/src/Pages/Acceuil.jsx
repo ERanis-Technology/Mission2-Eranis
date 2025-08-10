@@ -6,6 +6,7 @@ import ServiceCompetent from "../Components/ServiceCompetent";
 import BulleActualite from "../Components/BulleActualite";
 import CardChiffreCle from "../Components/CardChiffreCle";
 import Footer from "../Components/Footer";
+import Caracteristiques from "../Components/Caracteristiques";
 
 
 function Acceuil() {
@@ -147,7 +148,36 @@ function Acceuil() {
                         pour les entreprises ambitieuses, optimisés pour la performance, personnalisables en quelques clics.
                     </p>
                     <div className="content">
-
+                        <div className="content1">
+                            <h3>Notre vision</h3>
+                            <p className="text">
+                                Nous croyons qu’une performance durable naît d’une bonne organisation, d’un suivi rigoureux et de la mise en réseau des bonnes
+                                compétences.C’est pourquoi ERANIS est conçue comme une plateforme vivante, capable de s’adapter, d’évoluer et d’offrir à chaque
+                                acteur – entreprise ou professionnel – une valeur concrète et mesurable. Nous ne centralisons pas simplement les informations : nous
+                                construisons un écosystème digital de croissance partagée.
+                            </p>
+                        </div>
+                        <div className="content2">
+                            <h3>Ce qui nous distingue</h3>
+                            <div className="missions">
+                                <Caracteristiques
+                                    title={"Évaluations mensuelles et semestrielles automatisées"} 
+                                    content={"Chaque talent est évalué régulièrement grâce à un système automatisé qui collecte et analyse ses performances en continu. Ces bilans permettent d’identifier les forces, les axes d’amélioration, et d’ajuster les missions proposées, garantissant ainsi une progression constante et objective."}
+                                />
+                                <Caracteristiques
+                                    title={"Intégration directe avec la plateforme YNNOVASS"} 
+                                    content={"ERANIS est connectée à YNNOVASS, une plateforme spécialisée proposant des modèles métiers éprouvés et prêts à l’emploi. Cela permet aux professionnels et entreprises d’accéder rapidement à des outils et méthodologies efficaces, facilitant la réussite des projets."}
+                                />
+                                <Caracteristiques
+                                    title={"Système de promotion et rétrogradation basé sur des résultats réels"} 
+                                    content={"La progression des talents dans notre écosystème est strictement liée à leurs performances mesurées. Les professionnels peuvent ainsi monter en grade ou être réorientés selon des critères transparents, assurant une dynamique juste et motivante."}
+                                />
+                                <Caracteristiques
+                                    title={"Connexion dynamique entre professionnels et entreprises"} 
+                                    content={"Nous facilitons des mises en relation stratégiques et réactives, permettant aux talents de trouver des missions adaptées à leurs compétences et aux entreprises d’accéder rapidement aux profils correspondant à leurs besoins, favorisant ainsi des collaborations durables et efficaces."}
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
