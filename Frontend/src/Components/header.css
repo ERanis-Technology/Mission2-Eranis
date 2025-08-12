@@ -49,6 +49,11 @@
     border-bottom: 4px solid var(--purple1);
 }
 
+.selected a{
+    border-bottom: 4px solid var(--purple1);
+}
+
+
 #header .buttons{
     width: 18%;
     height: 100%;

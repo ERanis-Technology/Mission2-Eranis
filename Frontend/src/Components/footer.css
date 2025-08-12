@@ -13,6 +13,12 @@ footer .discuter a{
     background-color: var(--blue6);
     padding: .95em;
     border-radius: 2.5em;
+    transition: 5s ease-in;
+    position: relative;
+}
+
+footer .discuter a:hover{
+    left: .5em;
 }
 
 footer .discuter img{

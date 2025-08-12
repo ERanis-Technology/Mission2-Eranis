@@ -1,0 +1,29 @@
+.cardTemoignages{
+    border: 1px solid blue;
+    margin: 1em 0;
+    padding: 1em 3em 2em 1em;
+    border: 5px solid var(--blue4);
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.cardTemoignages img{
+    height: 14em;
+}
+
+.cardTemoignages .temoignage{
+    font-family: "Poppins-regular";
+    font-size: 1.05em;
+    padding: 1em;
+    font-weight: 200;
+    height: 15em;
+    max-height: 15em;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.cardTemoignages .temoignage .nom{
+    color: var(--blue1);
+    font-family: "Poppins-medium";
+}

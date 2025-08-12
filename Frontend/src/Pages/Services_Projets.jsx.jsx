@@ -1,5 +1,5 @@
 import React from "react";
-import "./acceuil.css"
+import "./services_Projets.css"
 import Header from "../Components/Header";
 import MissionDescription from "../Components/MissionDescription";
 import ServiceCompetent from "../Components/ServiceCompetent";
@@ -9,11 +9,11 @@ import Footer from "../Components/Footer";
 import Caracteristiques from "../Components/Caracteristiques";
 
 
-function Acceuil() {
+function Services_Projets() {
     
     return(
-        <div className="acceuil">
-            <Header/>
+        <div className="services_Projets">
+            <Header pageNumber={"1"}/>
             <main>
                 <div className="part1">
                     <div className="messages">
@@ -188,4 +188,4 @@ function Acceuil() {
 }
 
 
-export default Acceuil
+export default Services_Projets

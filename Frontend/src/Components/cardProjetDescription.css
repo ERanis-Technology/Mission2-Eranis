@@ -1,0 +1,33 @@
+.cardProjetDescription{
+    width: 14em;
+    max-width: 14em;
+    height: 18em;
+    max-height: 22em;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #ffffffb4;
+    box-shadow: 5px 15px 15px grey;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.cardProjetDescription img{
+    width: 100%;
+}
+
+.cardProjetDescription h4{
+    color: var(--blue1);
+    margin-bottom: 1em;
+    font-family: "Poppins-bold";
+}
+
+.cardProjetDescription p{
+    height: 5em;
+    max-height: 5em;
+    overflow: hidden;
+    overflow-y: auto;
+    text-align: start;
+    font-weight: 300;
+    font-size: .95em;
+}
