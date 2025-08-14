@@ -6,7 +6,9 @@ footer .discuter{
     background-color: #ffffffff;
 }
 
-footer .discuter a{
+footer .discuter button{
+    border: 0;
+    outline: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,8 +19,9 @@ footer .discuter a{
     position: relative;
 }
 
-footer .discuter a:hover{
+footer .discuter button:hover{
     left: .5em;
+
 }
 
 footer .discuter img{
@@ -93,8 +96,75 @@ footer .footer .sections ul a{
     color: #ffffffff;
 }
 
+footer .footer .sections ul li{
+    cursor: pointer;
+}
+
 .copyright{
     font-weight: 300;
     font-size: 1.05em;
     margin: 1em 0;
+}
+
+/*=====================================================================*/
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  position: absolute;
+  bottom: 2%;
+  left: 45%;
+  z-index: 200;
+}
+
+ .contact-form label {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  resize: none;
+
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background: linear-gradient(to right,var(--blue1),var(--blue2));
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.contact-form button:hover {
+  transform: scale(.97);
+}
+
+.contact-form .status-message {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+  text-align: center;
 }

@@ -22,10 +22,6 @@ function Header({pageNumber}) {
                 <li><a href="">Équipe</a></li>
                 <li><NavLink to="/blog">Blog</NavLink></li>
             </ul>
-            <div className="buttons">
-                <a href="">se connecter</a>
-                <a href="">s'inscrire</a>
-            </div>
         </div>
     )
 

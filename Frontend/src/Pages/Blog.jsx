@@ -3,11 +3,32 @@ import "./blog.css"
 import Header from "../Components/Header";
 import CardProjetDescription from "../Components/CardProjetDescription";
 import Footer from "../Components/Footer";
-import { useEffect } from "react";
-
+import { useEffect,useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function Blog({}) {
-    
+    const [nom,setNom] = useState("")
+    const [email,setEmail] = useState("")
+    const navigate = useNavigate()
+
+    function abonner(e) {
+        e.preventDefault()
+        axios.post("http://192.168.43.160:8000/api/newsletter/subscribe/",{
+            nom: nom,
+            email: email
+        })
+        .then(res=>{
+            console.log({"Succes": res})
+            setTimeout(() => {
+                navigate("/blog")
+            }, 2000);
+        })
+        .catch(error=>{
+            console.log({"Error": error})
+        })
+
+    }
 
     return (
         <div className="blog">
@@ -63,11 +84,15 @@ export default function Blog({}) {
                 <div className="part2 part3 part5">
                     <h2>Newsletter / Abonnement</h2>
                     <p className="description">Recevez une fois par mois les  nouvelles de l’univers ERANIS (projets, articles, nouveautés) </p>
-                    <form action="" className="register">
+                    <form action="" className="register" onSubmit={(e)=>abonner(e)}>
                         <label htmlFor="nom">nom</label>
-                        <input type="text" id="nom" className="nom" placeholder="Value"/>
+                        <input type="text" id="nom" className="nom" placeholder="Value" required
+                            value={nom} onChange={(e)=>setNom(e.target.value)}
+                        />
                         <label htmlFor="email">email</label>
-                        <input type="email" id="email" className="email" />
+                        <input type="email" id="email" className="email" required
+                            value={email} onChange={(e)=>setEmail(e.target.value)}
+                        />
                         <button>S’abonner à la newsletter</button>
                     </form>
                 </div>

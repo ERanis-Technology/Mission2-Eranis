@@ -1,16 +1,85 @@
 import React from "react";
 import "./footer.css"
 import {NavLink} from "react-router-dom"
+import { useState } from "react";
+import axios from "axios";
 
 export default function Footer() {
+    const [display,setDisplay] = useState("none")
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [status, setStatus] = useState(''); // Pour afficher un message de statut après soumission
+
     
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        
+        // Exemple de traitement : affichage en console pour le moment
+        // Vous pouvez remplacer cela par un envoi vers un backend ou un service tiers (voir explication ci-dessous)
+        console.log({ name, email, message });
+        axios.post("http://192.168.43.160:8000/api/contact/send", {
+            nom: name,
+            email: email,
+            description: message
+        }).then(res=>{
+                setName('')
+                setEmail('')
+                setMessage('')
+                //console.log(res)
+                setStatus('Message envoyé avec succès !');
+                setTimeout(() => {
+                    setDisplay("none")
+                }, 1000);
+            }
+        )
+        .catch(error=>console.log({"Error": error}))
+        
+        // Simulation d'envoi réussi (remplacez par une vraie requête fetch ou service)
+        
+        
+        // Réinitialisation du formulaire
+        
+        
+    };
+
     return (
         <footer>
-            <div className="discuter">
+            <form onSubmit={handleSubmit} className="contact-form" style={{display: display}}>
+                <label htmlFor="name">Nom :</label>
+                <input
+                    type="text"
+                    id="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                />
+
+                <label htmlFor="email">Email :</label>
+                <input
+                    type="email"
+                    id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                />
+
+                <label htmlFor="message">Message :</label>
+                <textarea
+                    id="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    required
+                />
+                <button type="submit">Envoyer</button>
+                
+                {status && <p className="status-message">{status}</p>}
+            </form>
+            <div className="discuter" onClick={()=>setDisplay("flex")}>
                 <span>Discutez-en avec notre équipe</span>
-                <a href="">
+                <button>
                     <img src="/next.svg" alt="" />
-                </a>
+                </button>
             </div>
             <div className="footer">
                 <div className="medias">
@@ -24,11 +93,11 @@ export default function Footer() {
                     <div className="section section1">
                         <h4>Contact & Support</h4>
                         <ul>
-                            <li>Email : contact@eranis.tech</li>
-                            <li>Téléphone : +237 6 XX XX XX XX</li>
+                            <li>Email : <a href="https://gmail.com">eranistechnology@gmail.com</a></li>
+                            <li>Téléphone : +237 673 115 233</li>
                             <li>Adresse : Yaoundé, Cameroun</li>
                             <li>Horaires : Lun-Ven, 9h à 18h</li>
-                            <li>Accéder au formulaire de contact</li>
+                            <li onClick={()=>setDisplay("flex")}>Accéder au formulaire de contact</li>
                         </ul>
                     </div>
                     <div className="section section2">
@@ -58,3 +127,6 @@ export default function Footer() {
     )
 
 }
+
+
+

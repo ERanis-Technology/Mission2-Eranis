@@ -38,7 +38,7 @@
     font-family: "Poppins-bold";
 }
 
-.cardMissions p{
+.cardMissions .text{
     font-size: .95em;
     font-family: "Poppins-medium";
     margin-bottom: 3em;

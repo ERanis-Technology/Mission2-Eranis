@@ -10,9 +10,9 @@ export default function CardMissions({background2,title,content}) {
                 <img src="/laptop.svg" alt=""/>
             </div>
             <h3>{title}</h3>
-            <p>
+            <div className="text">
                 {content}
-            </p>
+            </div>
             <button>
                 <span>En savoir plus</span>
                 <img src="/fleche.svg" alt="" />
