@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css"
-
+import {NavLink} from "react-router-dom"
 
 export default function Footer() {
     
@@ -14,10 +14,10 @@ export default function Footer() {
             </div>
             <div className="footer">
                 <div className="medias">
-                    <a href=""><img src="/x.svg" alt="" /></a>
-                    <a href=""><img src="/instagram.svg" alt="" /></a>
-                    <a href=""><img src="/youtube.svg" alt="" /></a>
-                    <a href=""><img src="/linkedin.svg" alt="" /></a>
+                    <NavLink to="https://x.com"><img src="/x.svg" alt="" /></NavLink>
+                    <NavLink to="https://instagram.cm"><img src="/instagram.svg" alt="" /></NavLink>
+                    <NavLink to="https://youtube.cm"><img src="/youtube.svg" alt="" /></NavLink>
+                    <NavLink to="https://linkedin.cm"><img src="/linkedin.svg" alt="" /></NavLink>
                 </div>
                 <div className="sections">
                     <h2>Façonnée <br/>pour l’Afrique, pensée pour l’avenir.</h2>
@@ -34,21 +34,21 @@ export default function Footer() {
                     <div className="section section2">
                         <h4>Navigation Rapide</h4>
                         <ul>
-                            <li><a href="">Acceuil</a></li>
-                            <li><a href="">Services</a></li>
-                            <li><a href="">Blog / Actualités</a></li>
-                            <li><a href="">Équipes</a></li>
-                            <li><a href="">Missions</a></li>
+                            <li><NavLink to="/*">Acceuil</NavLink></li>
+                            <li><NavLink to="/*">Services</NavLink></li>
+                            <li><NavLink to="/blog">Blog / Actualités</NavLink></li>
+                            <li><NavLink to="/*">Équipes</NavLink></li>
+                            <li><NavLink to="/missions">Missions</NavLink></li>
                         </ul>
                     </div>
                     <div className="section section3">
                         <h4>Pour les Entreprises</h4>
                         <ul>
-                            <li><a href="">Espace EntreprisePremium</a></li>
-                            <li><a href="">Statistiques & Résultats</a></li>
-                            <li><a href="">Conditions Générales de vente(CGV)</a></li>
-                            <li><a href="">Mentions légales</a></li>
-                            <li><a href="">Politique de Confidentialité</a></li>
+                            <li><a to="">Espace EntreprisePremium</a></li>
+                            <li><a to="">Statistiques & Résultats</a></li>
+                            <li><a to="">Conditions Générales de vente(CGV)</a></li>
+                            <li><a to="">Mentions légales</a></li>
+                            <li><a to="">Politique de Confidentialité</a></li>
                         </ul>
                     </div>
                 </div>

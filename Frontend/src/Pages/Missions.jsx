@@ -30,62 +30,62 @@ export default function Missions() {
                     <CardMissions background2={""} 
                         title={"Mission 1: YNNOVAS"}
                         content={
-                            <p>YNNOVASS est une plateforme de freelance camerounaise pour les etudiants</p>
+                            <span>YNNOVASS est une plateforme de freelance camerounaise pour les etudiants</span>
                         }
                     />
                     <CardMissions  background2={"background2"} 
                         title={"Mission 2: Naissance+"}
                         content={
-                            <p>
+                            <span>
                                 <ul>
                                     <li>Application web/mobile de génération et traçabilité des actes.</li>
                                     <li>Intégration avec les mairies (base de données sécurisée).</li>
                                 </ul>
-                            </p>
+                            </span>
                         }
                     />
                     <CardMissions background2={""} 
                         title={"Mission 3: SchoolPack"}
                         content={
-                            <p>
+                            <span>
                                 <ul>
                                     <li>Marketplace de fournitures groupées + revente de tenues</li>
                                     <li>Scan IA des listes scolaires + géolocalisation des librairies.</li>
                                 </ul>
-                            </p>
+                            </span>
                         }
                     />
                     <CardMissions background2={""} 
                         title={"Mission 3: SchoolPack"}
                         content={
-                            <p>
+                            <span>
                                 <ul>
                                     <li>Marketplace de fournitures groupées + revente de tenues</li>
                                     <li>Scan IA des listes scolaires + géolocalisation des librairies.</li>
                                 </ul>
-                            </p>
+                            </span>
                         }
                     />
                     <CardMissions background2={""} 
                         title={"Mission 3: SchoolPack"}
                         content={
-                            <p>
+                            <span>
                                 <ul>
                                     <li>Marketplace de fournitures groupées + revente de tenues</li>
                                     <li>Scan IA des listes scolaires + géolocalisation des librairies.</li>
                                 </ul>
-                            </p>
+                            </span>
                         }
                     />
                     <CardMissions background2={""} 
                         title={"Mission 3: SchoolPack"}
                         content={
-                            <p>
+                            <span>
                                 <ul>
                                     <li>Marketplace de fournitures groupées + revente de tenues</li>
                                     <li>Scan IA des listes scolaires + géolocalisation des librairies.</li>
                                 </ul>
-                            </p>
+                            </span>
                         }
                     />
                 </div>
