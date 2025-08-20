@@ -14,7 +14,7 @@ export default function Blog({}) {
 
     function abonner(e) {
         e.preventDefault()
-        axios.post("http://192.168.43.160:8000/api/newsletter/subscribe/",{
+        axios.post("https://mission1back.eranis.tech/api/newsletter/subscribe/",{
             nom: nom,
             email: email
         })

@@ -18,7 +18,7 @@ export default function Footer() {
         // Exemple de traitement : affichage en console pour le moment
         // Vous pouvez remplacer cela par un envoi vers un backend ou un service tiers (voir explication ci-dessous)
         console.log({ name, email, message });
-        axios.post("http://192.168.43.160:8000/api/contact/send", {
+        axios.post("https://mission1back.eranis.tech/api/contact/send", {
             nom: name,
             email: email,
             description: message
