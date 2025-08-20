@@ -1,0 +1,152 @@
+.missions main .part1{
+    margin: 1em 2.5em 2em 2.5em;
+    padding: 0 2em;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.5em;
+    background: linear-gradient(to right,var(--purple4),white);
+    height: 16em;
+    overflow: hidden;
+}
+
+.missions main .part1 .messages{
+    color: #ffffff;
+    width: 40%;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.missions main .part1 .messages p{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+.missions main .part1 .messages p span{
+    position: relative;
+    bottom: .4em;
+}
+
+.missions main .part1 .messages h1{
+    font-size: 3em;
+    font-family: "Poppins-bold";
+}
+
+.missions main .part1 .images{
+    position: relative;
+    width: 60%;
+
+}
+
+.missions main .part1 .images img:nth-child(1){
+    position: absolute;
+    right: 8%;
+    top: -20%;
+    height: 145%;
+    width: 55%;
+
+}
+
+.missions main .part1 .images img:nth-child(2){
+    position: absolute;
+    width: 4em;
+    top: 40%;
+    left: 20%;
+}
+
+.missions main .part1 .images img:nth-child(3){
+    position: absolute;
+    width: 2.5em;
+    top: 60%;
+    right: 8%;
+}
+
+.missions main .part1 .images img:nth-child(4){
+    position: absolute;
+    width: 1.5em;
+    top: 20%;
+    right: 8%;
+
+}
+
+/*=================================================================================================*/
+
+.missions main .part2{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 1em 2em 4em 2em;
+    gap: 2em;
+}
+
+/*=================================================================================================*/
+
+
+.missions main .part3{
+    padding: 0 2em 3em 2em;
+}
+
+.missions main .part3 h2{
+    font-size: 3em;
+    height: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #594F89;
+}
+
+.missions main .part3 form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em 3em;
+    margin-top: 5em;
+    width: 80%;
+    background-color: #04093F;
+    border-radius: 1em;
+    margin-left: 10%;
+}
+
+.missions main .part3 form textarea{
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    background-color: #ffffff;
+    color: black;
+    width: 85%;
+    margin-bottom: 2em;
+    resize: none;
+}
+
+.missions main .part3 form textarea::placeholder{
+    color: black;
+    font-weight: 700;
+    font-family: "Poppins-bold";
+}
+
+.missions main .part3 form .buttons{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.missions main .part3 form input[type="submit"],
+.missions main .part3 form input[type="reset"] {
+    border: 0;
+    outline: 0;
+    padding: 1em 2em;
+    border-radius: .5em;
+    background: linear-gradient(to right,#04093F,#6B4F8F);
+    font-weight: 600;
+    transition: .5s;
+}
+
+
+.missions main .part3 form input[type="submit"]:hover,
+.missions main .part3 form input[type="reset"]:hover{
+    transform: scale(.95);
+}
