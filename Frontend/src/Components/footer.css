@@ -66,7 +66,7 @@ footer .footer .medias a:hover{
 
 
 footer .footer .sections{
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 1em;
@@ -167,4 +167,71 @@ footer .footer .sections ul li{
   border: 1px solid #c3e6cb;
   border-radius: 4px;
   text-align: center;
+}
+
+
+@media screen and (max-width: 430px) {
+    
+    footer .discuter{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em 10%;
+        background-color: #ffffffff;
+    }
+
+    footer .footer .medias{
+        width: 80%;
+    }
+
+
+    footer .footer .sections{
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 1em;
+    }
+
+    footer .footer .sections h2{
+        width: 100%;
+        font-size: 1.5em;
+        font-weight: 900;
+        color: var(--blue6);
+        font-family: "Poppins-medium";
+    }
+
+    footer .footer .sections h2 br{
+        display: none;
+    }
+
+    footer .footer .sections h4{
+        margin-bottom: 1em;
+    }
+
+    footer .footer .sections ul *{
+        list-style: none;
+        font-weight: 300;
+        font-size: 1.05em;
+    }
+
+    footer .footer .sections ul a{
+        color: #ffffffff;
+    }
+
+    footer .footer .sections ul li{
+        cursor: pointer;
+    }
+
+    footer .footer .sections .section{
+        margin: 1em 0 1em 0;
+    }
+
+    .copyright{
+        font-weight: 300;
+        font-size: 1.05em;
+        margin: 1em 0;
+    }
+
+
 }

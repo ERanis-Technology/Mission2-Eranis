@@ -3,16 +3,13 @@ import "./bulleActualite.css"
 
 
 
-function BulleActualite({}) {
+function BulleActualite({title, description}) {
     
     return (
         <div className="bulleActualite">
-            <h4>Retour sur notre dernier projet e-commerce pour une marque africaine</h4>
+            <h4>{title}</h4>
             <div className="main">
-                <span className="description">
-                    Nous avons récemment collaboré avec Kossa, une marque de cosmétiques naturels basée au Bénin,
-                    pour concevoir une plateforme e-commerce moderne, performante et pensée mobile-first.
-                </span>
+                <span className="description">{description}</span>
                 <div className="briefing">
 
                 </div>

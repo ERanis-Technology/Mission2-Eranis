@@ -1,16 +1,16 @@
 #header{
     width: 100%;
-    height: 5em;
+    height: 4.5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 14px;
     padding: 0 1em 0 1em;
     background-color: #fff;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 200;
+    overflow: hidden;
 }
 
 .bg{
@@ -84,4 +84,59 @@
 
 #header .buttons a:last-child:hover{
     transform: scale(.95);
+}
+
+
+@media screen and (max-width: 430px) {
+
+    #header{
+        width: 100%;
+        height: 15em;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: .5em 0 1em 0;
+    }
+
+    .bg{
+        background-color: #353535;
+    }
+
+    #header .logo{
+        height: 4em;
+    }
+
+    #header .logo img{
+        padding-left: 1em;
+        width: 6em;
+        height: 5em;
+    }
+
+    #header ul{
+        width: 95%;
+        height: 90%;
+        padding: 1em;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        font-family: "poppins-regular";
+    }
+
+    #header li{
+        margin-bottom: 1em;
+    }
+
+    #header li a{
+        color: black;
+        padding: 0;
+        width: 100%;
+        font-weight: 900;
+    }
+
+    .selected a{
+        border-bottom: 4px solid var(--purple1);
+    }
 }

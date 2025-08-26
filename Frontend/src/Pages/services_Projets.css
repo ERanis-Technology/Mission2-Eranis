@@ -261,3 +261,178 @@
     border-radius: .5em;
 }
 
+
+/*================================@MEDIAS========================================*/
+
+@media screen and (max-width: 430px) {
+    
+    .services_Projets main .part1{
+        margin: 11em .5em 2em .5em;
+        padding: 1em 1em;
+        display: flex;
+        border-radius: 0.5em;
+        background: linear-gradient(to right,var(--blue2),var(--blue1));
+    }
+
+    .services_Projets main .part1 .messages{
+        width: 60%;
+        color: #ffffff;
+        position: relative;
+    } 
+
+    .services_Projets main .part1 .messages h1{
+        font-size: 2em;
+        font-family: "Poppins-bold";
+        line-height: 1.35em;
+    }
+
+    .services_Projets main .part1 .messages h1 span{
+        color: var(--blue6);
+    }
+
+    .services_Projets main .part1 .messages h5{
+        margin-top: 1em;
+        font-size: 15px;
+        font-family: "Poppins-light";
+        width: 100%;
+        position: relative;
+
+    }
+
+    .services_Projets main .part1 .illustrations{
+        width: 40%;
+        position: relative;
+    }
+    .services_Projets main .part1 img{
+        width: 50%;
+        position: absolute;
+    }
+
+    .services_Projets main .part1 img:nth-child(2){
+        left: 30%;
+        top: 22%;
+    }
+
+    .services_Projets main .part1 img:nth-child(1){
+    top: 40%;
+    left: 0;
+    transform: rotate(-15deg);
+    }
+
+    .services_Projets main .part1 img:nth-child(3){
+    right: -1.5em;
+    top: 40%;
+    transform: rotate(45deg);
+    }
+
+    .services_Projets main .part2{
+    margin-top: 1em;
+    background-color: #ffffff;
+    padding: 2em 1em;
+}
+
+    .services_Projets main .part2 .description{
+        font-size: 1.25em;
+    }
+
+    .services_Projets main .part2 .description span{
+        color: var(--blue3);
+    }
+
+    .services_Projets main .part2 .missions h3{
+        font-size: 1.2em;
+        color: grey;
+        margin: 1em 0;
+    }
+
+    .services_Projets main .part2 .missions .content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .services_Projets main .part2 button{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2em;
+        padding: 0.75em;
+        font-size: 1em;
+        font-weight: 500;
+        background: linear-gradient(to right,var(--purple2),var(--purple3));
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .services_Projets main .part2 button:hover{
+        letter-spacing: 1px;
+    }
+
+    .services_Projets main .part2 button img{
+        width: 1em;
+        margin-left: .25em;
+    }
+
+    .services_Projets main .part3{
+        padding: 1em 5%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .services_Projets main .part3 h2{
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .services_Projets main .part3 .description{
+        font-size: 1em;
+        text-align: start;
+        width: 100%;
+        margin: 1em 0;
+        text-align: center;
+    }
+
+    .services_Projets main .part3 .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services_Projets main .part6 .content {
+        margin-top: 2em;
+        width: 100%;
+        height: max-content;
+        display: grid;
+        grid-template-columns: 47.5% 47.5%;
+        gap: 0;
+    }
+
+
+    .services_Projets main .part7 .content h3{
+        font-size: 1.5em;
+    }
+
+    .services_Projets main .part7 .content1 .text{
+        font-size: 1em;
+        font-weight: 300;
+    }
+
+    .services_Projets main .part7 .content2 .missions{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        gap: 1em;
+        padding: 3% 2%;
+        background-color: #E8F8FF;
+        border-radius: .5em;
+    }
+
+    
+
+
+
+}

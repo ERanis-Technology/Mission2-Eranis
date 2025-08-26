@@ -138,3 +138,14 @@
 .blog main .part5 form button:hover{
     transform: scale(.98);
 }
+
+
+/*===========================MEDIA QUERY========================================*/
+
+@media screen and (max-width: 430px) {
+    
+    .blog .part1 h1{
+        text-align: center;
+    }
+
+}

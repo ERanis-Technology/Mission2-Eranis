@@ -108,7 +108,10 @@ function Services_Projets() {
                         trois derniers articles pour suivre notre évolution, mieux comprendre nos expertises, et anticiper les innovations à venir.
                     </p>
                     <div className="caroussel">
-                        <BulleActualite/>
+                        <BulleActualite
+                            title={"Retour sur notre dernier projet e-commerce pour une marque africaine"}
+                            description={"Nous avons récemment collaboré avec Kossa, une marque de cosmétiques naturels basée au Bénin, pour concevoir une plateforme e-commerce moderne, performante et pensée mobile-first."}
+                        />
                     </div>
                 </div>
                 <div className="part3 part6">
@@ -150,7 +153,7 @@ function Services_Projets() {
                     <div className="content">
                         <div className="content1">
                             <h3>Notre vision</h3>
-                            <p className="text">
+                            <p className="text description">
                                 Nous croyons qu’une performance durable naît d’une bonne organisation, d’un suivi rigoureux et de la mise en réseau des bonnes
                                 compétences.C’est pourquoi ERANIS est conçue comme une plateforme vivante, capable de s’adapter, d’évoluer et d’offrir à chaque
                                 acteur – entreprise ou professionnel – une valeur concrète et mesurable. Nous ne centralisons pas simplement les informations : nous
