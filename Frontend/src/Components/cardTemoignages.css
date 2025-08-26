@@ -27,3 +27,29 @@
     color: var(--blue1);
     font-family: "Poppins-medium";
 }
+
+@media screen and (max-width: 430px) {
+    
+    .cardTemoignages{
+        border: 1px solid blue;
+        margin: 1em 0;
+        padding: 0 .5em .5em 1em;
+        border: 5px solid var(--blue4);
+    }
+
+    .cardTemoignages img{
+        height: 10em;
+    }
+
+    .cardTemoignages .temoignage{
+        font-family: "Poppins-regular";
+        font-size: .85em;
+        padding: 1em;
+        font-weight: 200;
+        height: 15em;
+        max-height: 15em;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+
+}

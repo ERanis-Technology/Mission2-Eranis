@@ -4,6 +4,7 @@
     color: #ffffff;
     padding: 1em 2em;
     position: relative;
+    margin-bottom: 1em;
 }
 
 .style1{
@@ -37,4 +38,54 @@
     font-size: 2em;
     font-weight: 800;
     width: 90%;
+}
+
+@media screen and (max-width: 430px) {
+    
+    .cardChiffreCle{
+        height: 15em;
+        border-radius: .5em;
+        color: #ffffff;
+        padding: 1em 2em;
+        position: relative;
+    }
+
+    .cardChiffreCle .chiffre{
+        font-size: 2em;
+        font-weight: 900;
+        font-family: "Poppins-bold";
+    }
+
+    .cardChiffreCle .value{
+        font-size: 1.25em;
+        font-weight: 800;
+        width: 90%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 810px) {
+    
+    .cardChiffreCle{
+        height: 14em;
+        border-radius: .5em;
+        color: #ffffff;
+        padding: 1em 2em;
+        position: relative;
+    }
+
+    .cardChiffreCle .chiffre{
+        font-size: 3em;
+        font-weight: 900;
+        font-family: "Poppins-bold";
+    }
+
+    .cardChiffreCle .value{
+        font-size: 1.25em;
+        font-weight: 800;
+        width: 90%;
+    }
+
 }

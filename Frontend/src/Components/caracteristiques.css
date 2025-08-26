@@ -13,7 +13,19 @@
 }
 
 
+
 .caracteristiques p{
     font-weight: 300;
     font-size: .95em;
+}
+
+@media screen and (max-width: 430px) {
+    
+    .caracteristiques h4{
+        display: flex;
+        font-weight: 700;
+        font-size: 1em;
+        margin-bottom: 1em;
+    }
+
 }

@@ -8,7 +8,7 @@ export default function Caracteristiques({title,content}) {
         <div className="caracteristiques">
             <h4>
                 <img src="/icon2.svg" alt="" />
-                {title}
+                <span>{title}</span>
             </h4>
             <p>{content}</p>
         </div>
